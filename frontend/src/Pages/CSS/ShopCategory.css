@@ -1,9 +1,14 @@
-.shopcategory-banner{
-    display: block;
-    margin: 30px auto;
-    width: 82%;
-}
 
+.shopcategory-banner {
+    width: 3000%;         /* Full viewport width */
+    height: auto;         /* Maintain aspect ratio */
+    display: block;       /* Prevent inline whitespace */
+    margin: 0;
+    padding: 0;
+    object-fit: cover;    /* Crop if needed to fill space */
+    
+  }
+  
 .shopcategory-indexSort{
     display: flex;
     margin: 0px 170px;

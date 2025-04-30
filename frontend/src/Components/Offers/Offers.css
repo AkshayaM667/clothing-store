@@ -1,140 +1,170 @@
-.offers{
+.offers {
     width: 65%;
     height: 60vh;
     display: flex;
     margin: auto;
     padding: 0px 140px;
     margin-bottom: 150px;
-    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    background: #ffffff; /* White background */
+    box-shadow: 0 12px 24px rgba(176, 132, 92, 0.1); /* Soft shadow */
+    border-radius: 20px;
 }
 
-.offers-left{
+.offers-left {
     flex: 1;
     display: flex;
-    flex-direction:  column;
+    flex-direction: column;
     justify-content: center;
 }
 
-.offers-left h1{
-    color: #171717;
+.offers-left h1 {
+    color: #6b4f3b; /* Deep brown */
     font-size: 50px;
     font-weight: 600;
 }
 
-.offers-left p{
-    color: #171717;
+.offers-left p {
+    color: #4b3b30;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.offers-left button{
+.offers-left button {
     width: 282px;
     height: 60px;
     border-radius: 35px;
-    background: #ff4141;
+    background: #b0845c;
     border: none;
-    color: white;
+    color: #fffaf0;
     font-size: 22px;
     font-weight: 500;
     margin-top: 30px;
     cursor: pointer;
+    box-shadow: 0 6px 12px rgba(176, 132, 92, 0.3);
+    transition: all 0.3s ease;
 }
 
-.offers-right{
+.offers-left button:hover {
+    background: #9b724d;
+    box-shadow: 0 8px 16px rgba(155, 114, 77, 0.35);
+}
+
+.offers-right {
     flex: 1;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-top: 80px;
 }
 
-@media(max-width: 1280px){
-    .offers{
+@media (max-width: 1280px) {
+    .offers {
         padding: 0px 80px;
         margin-bottom: 120px;
     }
-    .offers-left h1{
+
+    .offers-left h1 {
         font-size: 40px;
     }
-    .offers-left p{
+
+    .offers-left p {
         font-size: 18px;
     }
-    .offers-right img{
-        width: 300px;
-    }
-    .offers-left button{
+
+    .offers-left button {
         width: 220px;
         height: 50px;
         font-size: 18px;
     }
-    .offers-right{
+
+    .offers-right img {
+        width: 300px;
+    }
+
+    .offers-right {
         padding-top: 30px;
     }
 }
 
-@media(max-width: 1024px){
-    .offers{
+@media (max-width: 1024px) {
+    .offers {
         padding: 0px 60px;
         margin-bottom: 80px;
         height: 40vh;
     }
-    .offers-left h1{
+
+    .offers-left h1 {
         font-size: 30px;
     }
-    .offers-left p{
+
+    .offers-left p {
         font-size: 16px;
     }
-    .offers-right img{
-        width: 200px;
-    }
-    .offers-left button{
+
+    .offers-left button {
         width: 160px;
         height: 40px;
         font-size: 16px;
     }
-    .offers-right{
+
+    .offers-right img {
+        width: 200px;
+    }
+
+    .offers-right {
         padding-top: 10px;
     }
 }
 
-@media(max-width: 800px){
-    .offers{
+@media (max-width: 800px) {
+    .offers {
         margin-bottom: 60px;
     }
-    .offers-left h1{
+
+    .offers-left h1 {
         font-size: 22px;
     }
-    .offers-left p{
+
+    .offers-left p {
         font-size: 13px;
     }
-    .offers-right img{
-        width: 180px;
-    }
-    .offers-left button{
+
+    .offers-left button {
         width: 140px;
         height: 30px;
         font-size: 12px;
     }
+
+    .offers-right img {
+        width: 180px;
+    }
 }
 
-@media(max-width: 500px){
-    .offers{
-        height: 25vh;
-        margin-bottom: 50px;
+@media (max-width: 500px) {
+    .offers {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 16px;
     }
-    .offers-left h1{
-        font-size: 16px;
+
+    .offers-left h1 {
+        font-size: 20px;
     }
-    .offers-left p{
-        font-size: 10px;
+
+    .offers-left p {
+        font-size: 12px;
     }
-    .offers-right img{
-        width: 120px;
-    }
-    .offers-left button{
+
+    .offers-left button {
         width: 120px;
         height: 25px;
         font-size: 10px;
-        margin-top: 12px
+        margin-top: 12px;
+    }
+
+    .offers-right img {
+        width: 120px;
+        margin-top: 20px;
     }
 }

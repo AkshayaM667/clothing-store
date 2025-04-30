@@ -7,7 +7,7 @@ const ListProduct = () => {
     const [allproducts, setAllProducts]=useState([]);
 
     const fetchInfo=async()=>{
-        await fetch('https://e-commerce2-uf2x.onrender.com/allproducts')
+        await fetch("http://localhost:4000/allproducts")
         .then((res)=>res.json())
         .then((data)=>{setAllProducts(data)});
     }
@@ -17,7 +17,7 @@ const ListProduct = () => {
     },[])
 
     const remove_product =async(id)=>{
-        await fetch('https://e-commerce2-uf2x.onrender.com/removeproduct',{
+        await fetch("http://localhost:4000/removeproduct",{
             method:'POST',
             headers:{
                 Accept: 'application/json',
@@ -45,8 +45,8 @@ const ListProduct = () => {
             <div key={index} className="listproduct-format-main listproduct-format">
                 <img src={product.image} alt="" className="listproduct-proudct-icon" />
                 <p>{product.name}</p>
-                <p>${product.old_price}</p>
-                <p>${product.new_price}</p>
+                <p>₹{product.old_price}</p>
+                <p>₹{product.new_price}</p>
                 <p>{product.category}</p>
                 <img onClick={()=>{remove_product(product.id)}} className='listproduct-remove-icon' src={cross_icon} alt="" />
             </div>
